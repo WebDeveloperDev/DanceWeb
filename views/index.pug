@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title 
+        style
+            include ../static/dance.css
+    body 
+        nav#navbar
+            .logo 
+                strong DDA 
+                img(src="../static/girl.png", alt="logo")
+            ul 
+                li #[a(href="#") HOME ]
+                li #[a(href="#") CLASS info ]
+                li #[a(href="#") SERVICES ]
+                li #[a(href="#") CONTACT]
+                li #[a(href="#") SERVICES ]
+        section#introSection 
+            strong  Welcome to Dev dance Academy
+            p Eat sleep dance repeat 
+        section#missionSection 
+            h2 Our mission 
+            div(class="Maincard") 
+                div.card 
+                    h3 Dance Perfection 
+                    .cardcontent 
+                        img(src="../static/girl.png", alt="", srcset="")
+                        p Practice make a man perfect
+                div.card 
+                    h3 Dance the way you like 
+                    .cardcontent 
+                        img(src="../static/one hand.png", alt="", srcset="")
+                        p Learn all religious dance steps 
+                div.card 
+                    h3 Expert Trainer
+                    .cardcontent 
+                        img(src="../static/couple.png", alt="", srcset="")
+                        p Get full guide by our best trainer
+        section#sponsorSection 
+            h2 Our sponsors
+            .sponimg 
+                img(src="../static/apple.png", alt="")
+                img(src="../static/amazon.png", alt="")
+                img(src="../static/flipkart.png", alt="")
+                img(src="../static/hp.png", alt="")
+        footer#footer 
+            | Copyright © 2019 DevDanceAcademy.com | All right reserved 
+        script(src="/static/index.js") 

@@ -1,0 +1,18 @@
+extends base.pug
+block script 
+    script(src="/static/index.js") 
+block style 
+    style 
+        include ../static/dance.css
+        include ../static/contact.css
+block content 
+    h2 Contact us 
+    form(action="/contact", method="post") 
+        input(type="text" class="myinp" name="name" placeholder="Enter your name")
+        input(type="number" class="myinp" name="age" placeholder="Enter your age")
+        input(type="email" class="myinp" name="email" placeholder="Enter your email id")
+        textarea(name="Address", class="myinp" ,cols="25", rows="10", id="address" ,placeholder="Enter your address")
+        textarea(name="comment",class="myinp", cols="25", rows="10", id="comment" ,placeholder="Comment here")
+        .btn 
+            button(type="submit") Submit 
+            button(type="reset") Reset
